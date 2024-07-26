@@ -339,6 +339,12 @@ section {
   bottom: 2.5rem;
 }
 
+.up_arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 5rem;
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -373,3 +379,81 @@ section {
   align-items: center;
   gap: 1rem;
 }
+
+/* EXPERIENCE */
+
+#experience {
+  position: relative;
+}
+
+.experience-title {
+  color: #05445E;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.experience-sub-title {
+  color: #267f91;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+  margin-top: 1em;
+  margin-bottom: 1rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.article-content {
+  margin-bottom: 1rem;
+}
+
+.article-skills {
+  font-size: 1.2rem;
+  list-style: none;
+  font-weight: 600;
+  color: #267f91;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.article-header{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+/* PROJECTS */
+
+#projects {
+  position: relative;
+}
+
+
+/* CONTACT */
