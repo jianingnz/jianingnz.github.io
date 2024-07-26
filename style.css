@@ -45,13 +45,14 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 12vh;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 a {
@@ -174,7 +175,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 88vh;
 }
 
 .section__pic-container {
@@ -200,11 +201,11 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  font-weight: 600;
 }
 
 .section__text__p1 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .section__text__p2 {
@@ -214,8 +215,30 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.section__text__p3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.section__text__p4 {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.section__text__p4_course {
+  margin-top: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
 .section__text__title {
   font-size: 3rem;
+  text-align: center;
+}
+
+.section_text_more {
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -278,5 +301,75 @@ section {
   gap: 1rem;
 }
 
+.more-to-explore {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  align-items: center;
+  right: 5%;
+  bottom: 4%;
+  cursor: pointer;
+}
 
+/* ABOUT */
+#about {
+  position: relative;
+}
 
+.about-container {
+  gap: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-container, .about-details-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: #05445E 0.2rem solid;
+  border-color: #267f91;
+  text-align: center;
+  min-width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+  justify-content: center;
+}
+
+.text-container {
+  padding: 1.5rem;
+  flex: content;
+  background: white;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.details-course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
