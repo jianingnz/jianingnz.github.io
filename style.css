@@ -168,6 +168,7 @@ section {
 
 .section-container {
   display: flex;
+  margin: 0.5rem;
 }
 
 /* PROFILE SECTION */
@@ -353,7 +354,6 @@ section {
   border: #05445E 0.2rem solid;
   border-color: #267f91;
   text-align: center;
-  min-width: 350px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -375,6 +375,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   gap: 1rem;
 }
 
@@ -442,7 +443,7 @@ article .icon {
 
 .more-btn-container {
   margin-top: 2rem;
-  position: absolute;
+  position: inherit;
   bottom: 1.5rem;
   left: 0;
   right: 0;
