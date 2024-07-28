@@ -474,7 +474,7 @@ article .icon {
 /* CONTACT */
 #contact {
   position: relative;
-  height: 90vh;
+  height: 95vh;
 }
 .contact-info-icon:hover {
   text-decoration: none;
@@ -490,7 +490,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 10vh;
+  height: 5vh;
   margin: 0 1rem;
 }
 
