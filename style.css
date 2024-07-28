@@ -159,7 +159,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: 6vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -401,7 +401,7 @@ section {
 .experience-details-container {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .article-container {
@@ -444,9 +444,17 @@ article .icon {
   font-size: 1.5rem;
 }
 
+.more-btn-container {
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+}
 
-
-
+.color-container {
+  position: relative;
+}
 
 
 /* PROJECTS */
@@ -455,5 +463,23 @@ article .icon {
   position: relative;
 }
 
+.project-title {
+  margin: 1rem;
+  color: #05445E;
+}
+
 
 /* CONTACT */
+#contact {
+  position: relative;
+}
+.contact-info-icon:hover {
+  text-decoration: none;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+}
