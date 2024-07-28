@@ -364,12 +364,10 @@ section {
 }
 
 .text-container {
-  padding: 1.5rem;
   flex: content;
   background: white;
   text-align: left;
   font-size: 1.5rem;
-  margin-top: 2rem;
   flex-direction: column;
 }
 
@@ -411,8 +409,6 @@ section {
   flex-direction: column;
   justify-content: space-around;
   padding: 1rem;
-  margin-top: 1em;
-  margin-bottom: 1rem;
 }
 
 article .icon {
@@ -454,6 +450,7 @@ article .icon {
 
 .color-container {
   position: relative;
+  min-height: 550px;
 }
 
 
@@ -468,10 +465,16 @@ article .icon {
   color: #05445E;
 }
 
+.project-container {
+  position: relative;
+  min-height: fit-content;
+}
+
 
 /* CONTACT */
 #contact {
   position: relative;
+  height: 90vh;
 }
 .contact-info-icon:hover {
   text-decoration: none;
@@ -482,4 +485,15 @@ article .icon {
   flex-direction: row;
   justify-content: center;
   gap: 5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 10vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
