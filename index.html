@@ -1,270 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" type="x-icon" href="./assets/website_icon1.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/website_icon1.png" />
   <title>Jianing Zhang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Jianing Zhang</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <div class="container">
+    <article>
+
+      <header class="profile-header">
+        <div class="profile-photo">
+          <img src="./assets/jianing_zhang_profile_2.jpg" alt="Jianing Zhang" />
+        </div>
+        <div class="profile-text">
+          <h1><span class="firstname">Jianing</span> Zhang</h1>
+          <p class="bio">
+            I am an incoming M.S. student in
+            <a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">Computer Vision</a>
+            at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>.
+            I am currently a student researcher at the
+            <a href="https://allenai.org/">Allen Institute for AI (Ai2)</a>
+            and the <a href="https://raivn.cs.washington.edu/">RAIVN Lab</a>
+            at the University of Washington, where I work with
+            <a href="https://hellomuffin.github.io/">Chenhao Zheng</a>, and
+            Prof. <a href="http://www.ranjaykrishna.com/">Ranjay Krishna</a>.
+            Before that, I received my B.S. in Computer Science (Honors,
+            <i>Cum Laude</i>) from the
+            <a href="https://www.cs.washington.edu/">UW Paul G. Allen School</a>,
+            and was fortunate to work at Peking University and at
+            <a href="https://www.shlab.org.cn/">Shanghai AI Lab</a>.
+            My research interest lies in computer vision and multimodal
+            language models.
+          </p>
+          <p class="profile-links">
+            <a href="mailto:jianing7@andrew.cmu.edu">Email</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://github.com/jianingnz" target="_blank" rel="noopener">GitHub</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://x.com/jianingnz" target="_blank" rel="noopener">Twitter</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://www.linkedin.com/in/zhangjianingneil" target="_blank" rel="noopener">LinkedIn</a>
+            &nbsp;&middot;&nbsp;
+            <a href="./assets/Jianing_Zhang_CV.pdf" target="_blank" rel="noopener">CV</a>
+          </p>
+        </div>
+      </header>
+
+      <h2 id="news">News</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">2026/02</span>
+          <span class="news-body"><a href="https://arxiv.org/abs/2602.22779">TrajTok</a> was accepted to CVPR 2026.</span>
+        </li>
+        <li>
+          <span class="news-date">2026/01</span>
+          <span class="news-body">Joined the <a href="https://allenai.org/">Allen Institute for AI</a> as a student researcher.</span>
+        </li>
+        <li>
+          <span class="news-date">2025/04</span>
+          <span class="news-body">Joined the <a href="https://raivn.cs.washington.edu/">RAIVN Lab</a> at UW with Prof. <a href="http://www.ranjaykrishna.com/">Ranjay Krishna</a>.</span>
+        </li>
       </ul>
-    </div>
-  </nav>
-  <nav id="smaller-nav">
-    <div class="logo">Jianing Zhang</div>
-    <div class="menu-nav">
-      <div class="menu-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <h2 id="research-interests">Research Interests</h2>
+      <ul class="interest-list">
+        <li>
+          <span class="interest-tag">Multimodal LMs</span>
+          <span class="interest-desc">Integrating vision, text, and other modalities for grounded understanding and reasoning.</span>
+        </li>
+        <li>
+          <span class="interest-tag">3D / 4D Understanding</span>
+          <span class="interest-desc">Representation learning and generative modeling for spatiotemporal and 3D/4D data.</span>
+        </li>
+        <li>
+          <span class="interest-tag">Embodied AI</span>
+          <span class="interest-desc">Intelligent agents that perceive, reason, and act in interactive environments.</span>
+        </li>
+      </ul>
+
+      <h2 id="publications">Selected Publications</h2>
+
+      <div class="publication-item">
+        <div class="publication-thumb">
+          <img src="./assets/molmomotion.png" alt="MolmoMotion teaser" />
+        </div>
+        <div class="publication-content">
+          <div class="publication-title">
+            MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction
+          </div>
+          <div class="publication-authors">
+            <strong>Jianing Zhang*</strong>, Chenhao Zheng*, Yajun Yang,
+            Rustin Soraki, Winson Han, Chun-Liang Li, Jason Ren, Max Argus,
+            Jieyu Zhang, Ranjay Krishna
+          </div>
+          <div class="publication-venue"><i>In submission</i></div>
+        </div>
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img class="profile_pic" src="./assets/jianing_zhang_profile_2.jpg" alt="Jianing Zhang profile picture">
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="section__text__title">Jianing Zhang</h1>
-      <p class="section__text__p2">@ UW Paul G. Allen School</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/Jianing Zhang latest.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div class="socials-container">
-        <img src="./assets/linkedin_logo.pic.jpg"
-        alt="LinkedIn Profile"
-        class="icon"
-        onclick="location.href='https://www.linkedin.com/in/jianing-zhang-1a113b259/'">
-        <img src="./assets/github_logo.pic.jpg"
-        alt="GitHub Profile"
-        class="icon"
-        onclick="location.href='https://github.com/jianingnz'">
-      </div>
-    </div>
-    <div class="more-to-explore" onclick="location.href='#about'">
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon more"/>
-      <h1 class="section_text_more">More About Me</h1>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="section__text__title">About Me</h1>
-    <div class="section-container">
-      <div class="about-details-container core-courses">
-        <div class="about-container">
-          <div class="details-container">
-            <h3 class="section__text__p3">Core Coursework</h3>
-            <div class="details-course">
-              <p class="section__text__p4_course"><span style="color: #05445E; font-weight: 500;">CSE446:</span><br/>Machine Learning<br/>
-                <span style="color: #05445E; font-weight: 500;">CSE332:</span><br/>Data Structures & Parallelism
-                <br/><span style="color: #05445E; font-weight: 500;">CSE311:</span><br/>Foundations of Computing I<br/>(logic, set theory, induction...)
-                <br/><span style="color: #05445E; font-weight: 500;">CSE331:</span><br/>Software Design & Implementation<br/>
-              </p>
-              <p class="section__text__p4_course"><span style="color: #05445E; font-weight: 500;">CSE333:</span><br/>Systems Programming
-                <br/><span style="color: #05445E; font-weight: 500;">CSE351:</span><br/>Hardware Software Interaction
-                  <br/><span style="color: #05445E; font-weight: 500;">CSE312:</span><br/>Foundations of Computing II<br/>(enumeration, probability, NP)
-                  <br/><span style="color: #05445E; font-weight: 500;">CSE12X:</span><br/>Computer Programming (Java)
-              </p>
-            </div>
+
+      <div class="publication-item">
+        <div class="publication-thumb">
+          <a href="https://arxiv.org/abs/2602.22779" target="_blank" rel="noopener">
+            <img src="./assets/trajtok.png" alt="TrajTok teaser" />
+          </a>
+        </div>
+        <div class="publication-content">
+          <div class="publication-title">
+            TrajTok: <i>Learning</i> Trajectory Tokens Enhances Video Understanding
+          </div>
+          <div class="publication-authors">
+            Chenhao Zheng, Jieyu Zhang, <strong>Jianing Zhang</strong>,
+            Weikai Huang, Ashutosh Kumar, Quan Kong, Oncel Tuzel,
+            Chun-Liang Li, Ranjay Krishna
+          </div>
+          <div class="publication-venue">CVPR 2026</div>
+          <div class="publication-links">
+            <a href="https://arxiv.org/abs/2602.22779" target="_blank" rel="noopener">paper</a>
           </div>
         </div>
       </div>
-      <div class="text-container">
-        <div class="about-container">
-          <div class="details-container">
-            <h3 class="section__text__p3">Education</h3>
-            <p class="section__text__p4">B.S. @ University of Washington<br>Paul G. Allen School</p>
-            <p class="section__text__p4">Year: 2022-2026(expected)</p>
-            <p class="section__text__p4">Current Cumulated GPA: 3.95/4.0</p>
+
+      <h2 id="work">Work Experience</h2>
+      <ul class="work-list">
+        <li>
+          <div class="work-row">
+            <span class="work-org">
+              <a href="https://allenai.org/">Allen Institute for AI (Ai2)</a>
+            </span>
+            <span class="work-when">Jan 2026 &ndash; Present</span>
           </div>
-        </div>
-        <p class="section__text__p2">
-          &emsp; Hi there! I am <span style="color: #05445E; font-weight: 500;">Jianing Zhang</span> and welcome to my personal portfolio!<br>
-          &emsp; I am currently a <span style="color: #05445E; font-weight: 500;">Junior</span> stduent majoring in <span style="color: #05445E; font-weight: 500;">Computer Science</span> at the University of Washington.<br/>
-          &emsp; I’m deeply keen on Artificial Intelligence, especially <span style="color: #05445E; font-weight: 500;">ML/DL</span>, and have done some research on Computer Vision and Optimization on Machine Learning and Deep Learning.
-          Feel free to talk to me if interested!<br>
-          &emsp; Also, I also consider myself as an efficient <span style="color: #05445E; font-weight: 500;">software developer</span>. I have worked on several projects with the basic knowledge
-          of utilizing React or HTML/CSS/JS.
-        </p>
-      </div>
-    </div>
-    <img src="./assets/up_arrow.png" alt="Arrow icon" class="icon up_arrow"
-    onclick="location.href='#'" />
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-    onclick="location.href='#experience'" />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">My Working</p>
-      <h1 class="section__text__title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <h2 class="experience-title">Research Assistant</h2>
-            <h3 class="experience-sub-title">Shanghai AI Lab</h3>
-            <div class="article-container">
-              <ul class="article-content">
-                <li>Pioneered research in Multiple Instance Learning (MIL) methods, elevating the field’s standards by focusing on CLAM-SB and WSI-FT algorithms, resulting in consistently superior predictive accuracy</li>
-                <li>Demonstrated exceptional proficiency in designing and executing meticulously structured experiments, achieving unprecedented results, and concluding a technical report</li>
-                <li>Collaborated seamlessly with interdisciplinary teams, fostering innovation and cross-pollination of ex- pertise, while remaining committed to ongoing professional development to maintain a leadership po- sition in the field</li>
-              </ul>
-              <h3 class="article-header">Required skills:</h3>
-              <ul class="article-skills">
-                <li>Python</li>
-                <li>PyTorch</li>
-                <li>Pandas</li>
-                <li>Tensorflow</li>
-              </ul>
-            </div>
-            <div class="more-btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.shlab.org.cn/'"
-              >
-                More
-              </button>
-            </div>
+          <div class="work-role">Student Researcher</div>
+        </li>
+        <li>
+          <div class="work-row">
+            <span class="work-org">
+              <a href="https://raivn.cs.washington.edu/">RAIVN Lab, UW</a>
+            </span>
+            <span class="work-when">Apr 2025 &ndash; Present</span>
           </div>
-          <div class="details-container color-container">
-            <h2 class="experience-title">Software Developer</h2>
-            <h3 class="experience-sub-title">Husky Sattelite Lab</h3>
-            <div class="article-container">
-              <ul class="article-content">
-                <li>Developed and implemented algorithms for the StarTracker system, enhancing the accuracy of satellite orientation.</li>
-                <li>Collaborated with a diverse team of engineers and scientists to optimize the Machine Learning model, improving the quality of the generated star maps.</li>
-                <li>Conducted comprehensive research on the StarND algorithm and other related algorithms to optimize the satellite locating process for our satellite, enhancing accuracy and efficiency.</li>
-              </ul>
-              <h3 class="article-header">Required skills:</h3>
-              <ul class="article-skills">
-                <li>C++</li>
-                <li>Python</li>
-                <li>PyTorch</li>
-              </ul>
-            </div>
-            <div class="more-btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://huskysat.org/index.html'"
-              >
-                More
-              </button>
-            </div>
+          <div class="work-role">
+            Student Researcher &middot; with
+            <a href="https://hellomuffin.github.io/">Chenhao Zheng</a> and Prof.
+            <a href="http://www.ranjaykrishna.com/">Ranjay Krishna</a>
           </div>
-        </div>
-      </div>
-    <img src="./assets/up_arrow.png" alt="Arrow icon" class="icon up_arrow"
-    onclick="location.href='#about'" />
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-    onclick="location.href='#projects'" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="section__text__title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container project-container">
-          <h2 class="experience-sub-title project-title">CIRCLE Web App</h2>
-          <div class="article-container">
-            <ul class="article-content">
-              <li>Improve international students' information access to school resources and critical immigration deadlines.
-              </li>
-              <li>Spearheaded the development of the official UW CIRCLE application, leveraging cross-platform ca- pabilities given the result of user research of over 200 students by utilizing React Native, React, and JavaScript to deliver a seamless user experience on both Android and Apple platforms</li>
-              <li>A self-driven pursuit of knowledge and software development skills allowed for hands-on experience in application development, showcasing a commitment to continuous learning and innovation in the field</li>
-            </ul>
+        </li>
+        <li>
+          <div class="work-row">
+            <span class="work-org">ZERO Lab, Peking University</span>
+            <span class="work-when">Jun &ndash; Sep 2024</span>
           </div>
-          <div class="more-btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/UW-CIRCLE/UW_CIRCLE_Web'"
-            >
-              More
-            </button>
+          <div class="work-role">
+            Student Researcher &middot; with Prof.
+            <a href="https://zhouchenlin.github.io/">Zhouchen Lin</a>
           </div>
-        </div>
-        <div class="details-container project-container">
-          <h2 class="experience-sub-title project-title">333gle Search Engine</h2>
-          <div class="article-container">
-            <ul class="article-content">
-              <li>Launched a multi-threaded web server using C++ that can handle over 100 requests at a time.</li>
-              <li>Devised file index using POSIX I/O of over 200 files which used several data structures to keep track of unique word counts in each file</li>
-              <li>Designed a file search shell usable by the web server that can search for the usage of more than 30 unique words in over 200 different files</li>
-            </ul>
+        </li>
+        <li>
+          <div class="work-row">
+            <span class="work-org">
+              <a href="https://www.shlab.org.cn/">Shanghai AI Lab</a>
+              &amp; Shanghai Jiao Tong University
+            </span>
+            <span class="work-when">Jun &ndash; Sep 2023</span>
           </div>
-          <div class="more-btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              More
-            </button>
+          <div class="work-role">
+            Student Researcher &middot; with Fang Yan, supervisor: Wei Liu
           </div>
-        </div>
-        <div class="details-container project-container">
-          <h2 class="experience-sub-title project-title">Poll Everything Web App</h2>
-          <div class="article-container">
-            <ul class="article-content">
-              <li>Created a web-based app that allows users to create a poll and vote for a poll</li>
-              <li>Allows for the poll to be ongoing and closed, and will display the outcome when closed</li>
-              <li>Constructed GUI using JavaScript, HTML, and CSS, and a Typescript React UI which provided an easy-to-use access usage for users</li>
-            </ul>
+        </li>
+      </ul>
+
+      <h2 id="projects">Projects</h2>
+      <ul class="work-list">
+        <li>
+          <div class="work-row">
+            <span class="work-org">Jane Street Market Data Forecasting</span>
+            <span class="work-when">Nov 2024 &ndash; Jan 2025</span>
           </div>
-          <div class="more-btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              More
-            </button>
+          <div class="work-role">
+            Time-series forecasting (Transformer + XGBoost) over 40M+ rows;
+            finished within 0.003 of the competition winner.
           </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/up_arrow.png" alt="Arrow icon" class="icon up_arrow"
-    onclick="location.href='#experience'" />
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-    onclick="location.href='#contact'" />
-  </section>
-  <section id="contact">
-    <h1 class="section__text__title">Contact Info</h1>
-    <div class="projects-details-container">
-      <div class="about-container">
-        <div class="details-container">
-          <h2 class="projects-sub-title">Email: <a href="mailto:jz283@cs.washington.edu" class="contact-info-icon">jz283@cs.washington.edu</a></h2>
-          <h2 class="projects-sub-title">Phone: +1(206)457-6609</h2>
-          <div class="contact-info">
-            <h2 class="projects-sub-title"><a href="https://github.com/jianingnz" class="contact-info-icon">Github</a></h2>
-            <h2 class="projects-sub-title"><a href="https://www.linkedin.com/in/jianing-zhang-1a113b259/" class="contact-info-icon">LinkedIn</a></h2>
+        </li>
+        <li>
+          <div class="work-row">
+            <span class="work-org">
+              <a href="https://github.com/UW-CIRCLE/UW_CIRCLE_Web">UW CIRCLE Application</a>
+            </span>
+            <span class="work-when">Jun 2023 &ndash; Jun 2024</span>
           </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/up_arrow.png" alt="Arrow icon" class="icon up_arrow"
-    onclick="location.href='#projects'" />
-  </section>
-  <footer>
-    <p>Copyright &#169; 2024 Jianing Zhang. All Rights Reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+          <div class="work-role">
+            Cross-platform React Native / React app for UW's international
+            student program.
+          </div>
+        </li>
+      </ul>
+
+      <h2 id="education">Education</h2>
+      <ul class="work-list">
+        <li>
+          <div class="work-row">
+            <span class="work-org">Carnegie Mellon University</span>
+            <span class="work-when">2026 &ndash; 2027 (incoming)</span>
+          </div>
+          <div class="work-role">M.S. in Computer Vision</div>
+        </li>
+        <li>
+          <div class="work-row">
+            <span class="work-org">University of Washington</span>
+            <span class="work-when">2022 &ndash; 2026</span>
+          </div>
+          <div class="work-role">
+            B.S. in Computer Science, Paul G. Allen School &middot;
+            <i>Cum Laude</i>, Honors in CS &middot; GPA 3.94 / 4.00
+          </div>
+        </li>
+      </ul>
+
+      <footer class="page-footer">
+        <p>&copy; 2024&ndash;2026 Jianing Zhang.</p>
+      </footer>
+
+    </article>
+  </div>
 </body>
 </html>
