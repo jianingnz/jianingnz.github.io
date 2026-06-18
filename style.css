@@ -61,8 +61,8 @@ p { margin: 0 0 14px; }
 .profile-header {
   display: flex;
   align-items: center;
-  gap: 32px;
-  margin-bottom: 8px;
+  gap: 36px;
+  margin-bottom: 12px;
 }
 
 .profile-photo {
@@ -79,7 +79,7 @@ p { margin: 0 0 14px; }
 
 .profile-text { flex: 1; min-width: 0; }
 .profile-text h1 {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   color: var(--accent);
   font-weight: 700;
 }
@@ -93,14 +93,16 @@ p { margin: 0 0 14px; }
 
 .bio {
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.75;
   color: #374151;
   margin-bottom: 12px;
 }
+.bio:last-of-type { margin-bottom: 0; }
 
 .profile-links {
   font-size: 14.5px;
-  margin-top: 16px;
+  line-height: 2;
+  margin-top: 18px;
   color: var(--muted);
 }
 .profile-links a {
